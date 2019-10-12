@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('e2e-assets app is running!');
+    expect(page.getImage()).not.toBeNull();
   });
 
   afterEach(async () => {
